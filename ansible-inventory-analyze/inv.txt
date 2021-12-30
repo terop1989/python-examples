@@ -1,0 +1,9 @@
+[servers]
+ubuntu0[0:1].com
+
+[clients]
+host2.com
+
+[group3:children]
+servers
+clients
