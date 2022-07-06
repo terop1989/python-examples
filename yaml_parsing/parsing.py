@@ -2,10 +2,12 @@
 
 import yaml
 
-with open('1.yml') as f:
+input_file = '1.yml'
+dict       = 'versions'
 
-    dict = 'versions'
-    artifacts = yaml.safe_load(f)['versions']
+with open(input_file) as f:
+
+    artifacts = yaml.safe_load(f)[dict]
 
     for key in artifacts:
         if (artifacts[key] != ''):
